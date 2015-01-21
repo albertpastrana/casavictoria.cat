@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'nanoc'
+gem 'adsf'
+gem 'less'
+gem 'therubyracer'
+gem 'guard-nanoc'
+gem 'html5small'
+gem 'nanoc-image-compressor'
+gem 'rainpress'

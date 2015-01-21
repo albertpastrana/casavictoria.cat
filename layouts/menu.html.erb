@@ -1,0 +1,26 @@
+<li>
+  <a title="Pijames i Batins" href="/pijames-batins/">Pijames</a>
+</li>
+<li>
+  <a title="Roba interior per a dona, home i nens" href="/roba-interior-dona-home-nen/">Roba interior</a>
+</li>
+<li>
+  <% if @top then %>
+      <a title="Roba de la llar, vestuari per a senyora..." data-target="#" data-toggle="dropdown" class="dropdown-toggle" href="/mes-productes/">Més productes <span class="caret"></span></a>
+      <ul role="menu" class="dropdown-menu">
+        <li><a title="Roba de bany" href="/mes-productes/#bany">Roba de bany</a></li>
+        <li><a title="Roba per a la llar" href="/mes-productes/#llar">Roba per a la llar</a></li>
+        <li><a title="Vestuari per a senyora" href="/mes-productes/#senyora">Vestuari per a senyora</a></li>
+      </ul>
+  <% else %>
+        <a title="Roba de la llar, vestuari per a senyora..." href="/mes-productes/">Més productes</a>
+  <% end %>
+</li>
+<li>
+  <a title="Contactar" href="/contactar/">Contactar</a>
+</li>
+<% unless @top then %>
+  <li>
+    <a title="Avís legal" href="/avis-legal/">Avís legal</a>
+  </li>
+<% end %>
