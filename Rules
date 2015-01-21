@@ -23,6 +23,7 @@ route '/style/*/' do
 end
 
 passthrough '/CNAME'
+passthrough 'googled5db185b2c9c0114'
 
 # compile '/images/*/' do
 #   filter :image_compressor, :advpng => false if item.binary?
