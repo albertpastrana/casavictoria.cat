@@ -22,6 +22,8 @@ route '/style/*/' do
   item.identifier.chop + '.css'
 end
 
+passthrough '/CNAME'
+
 # compile '/images/*/' do
 #   filter :image_compressor, :advpng => false if item.binary?
 # end

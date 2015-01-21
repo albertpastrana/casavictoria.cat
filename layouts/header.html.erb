@@ -1,0 +1,25 @@
+    <header class="navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <hgroup class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <h1><a href="/" rel="home"><img alt="Casa Victòria" title="Casa Victòria" height="40" src="/images/casa-victoria-logo-transparent.png"></a><h1>
+        </hgroup>
+        <nav class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <%= render "menu", :top => true %>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <% if @item[:featured_image] %>
+      <img src="<%= @item[:featured_image] %>">
+    <% else %>
+      <header class="cover-image">          
+        <div>
+          <h1>Casa Victòria</h1>
+          <h2>Proximitat i qualitat a l'abast de tothom</h2>
+        </div>
+      </header>
+    <% end %>

@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<title><%= @item[:title] %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="<%= @item[:description] %>"/>
+<meta property="og:description" content="<%= @item[:description] %>"/>
+<meta property="og:image" content="<%= @item[:featured_image] %>"/>
+<!-- you don't need to keep this, but it's cool for stats! -->
+<meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300|Raleway:700,300'>
+<link rel="stylesheet" href="<%= @items['/style/main/'].path %>">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="canonical" href="http://casavictoria.cat<%= @item.path %>">
