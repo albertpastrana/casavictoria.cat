@@ -25,17 +25,21 @@ end
 passthrough '/CNAME'
 passthrough 'googled5db185b2c9c0114'
 
-# compile '/images/*/' do
-#   filter :image_compressor, :advpng => false if item.binary?
-# end
+compile 'sitemap' do
+  filter :erb
+end
+
+route 'sitemap' do
+  item.identifier.chop + '.xml'
+end
 
 compile '*' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
-    filter :html5small
     layout 'default'
+    filter :html5small
   end
 end
 

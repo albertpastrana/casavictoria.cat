@@ -4,6 +4,7 @@ GEM
     adsf (1.2.0)
       rack (>= 1.0.0)
     allison (2.0.3)
+    builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
@@ -99,6 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
+  builder
   guard-nanoc
   html5small
   less
