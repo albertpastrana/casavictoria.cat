@@ -82,7 +82,6 @@ img.inline {
 img, embed, iframe, media, swf, pre, code, container, select {
     display: block;
     max-width:100%;
-    /*height: auto;*/ /* this messes up embedded videos */
     overflow:hidden;
     white-space: pre;           /* CSS 2.0 */
     white-space: pre-wrap;      /* CSS 2.1 */
