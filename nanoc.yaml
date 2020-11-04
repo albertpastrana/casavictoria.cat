@@ -73,4 +73,4 @@ checks:
     #   exclude: ['^/server_status']
     exclude: []
 
-base_url: http://casavictoria.cat
+base_url: https://casavictoria.cat
